@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+	<meta charset="UTF-8">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>Pong</title>
+
+	<link rel="stylesheet" href="./css/style.css">
+
+</head>
+
+<body onkeydown="moverPaletas(event)" onkeyup="pararPaletas(event)">
+
+	<div id="contenedor">
+
+		<canvas width="600" height="300" id="canvas">
+
+		</canvas>
+
+		<div id="modal">
+
+			<button id="boton" onclick="iniciar();">
+
+				<img src="img/play-button.png" class="img">
+
+			</button>
+
+		</div>
+
+	</div>
+
+	<script src="./js/Base.js"></script>
+	<script src="./js/Bola.js"></script>
+	<script src="./js/Paleta.js"></script>
+	<script src="./js/Puntos.js"></script>
+	<script src="./js/scriptPong.js"></script>
+
+</body>
+
+</html>
